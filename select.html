@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Select event</title>
+
+	<style>
+		
+		div{
+			color: green;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			$("input").select(function(){
+				$("div").text("Something was Selected").show().fadeout(1000);
+
+			});
+
+		});
+		
+
+	</script>
+
+</head>
+<body>
+
+	<input type="text" value="Kumar Sagor">
+	<div> </div>
+	
+</body>
+</html>

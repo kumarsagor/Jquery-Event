@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Scroll event</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script >
+		
+		var x=0;
+		$(document).ready(function(){
+			$('.main').scroll(function(){
+				$('span').text(x+=1);
+
+			});
+
+		});
+	</script>
+
+
+
+
+
+
+
+	<style>
+		.main{
+			border: 1px solid black;
+			width: 200px;
+			height: 100px;
+			overflow: scroll;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="main">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatibus, placeat iusto repellendus labore dolorem ut ex hic veritatis sint eaque eos aperiam eveniet ipsam error natus, sunt eum doloribus ratione commodi non vitae? Dolores odit voluptas deserunt quam quis expedita placeat porro voluptatum, rerum aut assumenda dolor, repellendus consectetur!
+		
+	</div>
+
+	<p> Scrolled <span>0 </span> times</p>
+	
+</body>
+</html>

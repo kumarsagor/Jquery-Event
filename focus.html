@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> focus event</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+			$('span').css('display','none');
+			$('#textbox').focus(function(){
+				$('#showdata').css('display','inline').fadeOut(5000);
+
+			});
+
+		});
+		
+
+
+	</script>
+
+
+
+</head>
+<body>
+
+	<input type="text" name="" id="textbox">
+	<span id="showdata"> Welcome</span>
+	
+</body>
+</html>

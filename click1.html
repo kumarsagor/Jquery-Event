@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Document</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" >
+		
+	</script>
+
+	<style>
+		.imgdiv img{
+			width: 100px;
+			height: 100px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="imgdiv">
+			<img src="jquery.jpg">
+		
+	</div>
+
+	<button id="btn_id"> Show </button>
+	<button id="btn_id1"> Hide </button>
+
+
+	<script>
+		$(document).ready(function(){
+			$('#btn_id').click(function(){
+				 $('.imgdiv').show();
+
+			});
+		$('#btn_id1').click(function(){
+			$('.imgdiv').hide();
+
+		});
+
+
+		});
+	</script>
+	
+</body>
+</html>

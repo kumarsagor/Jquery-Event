@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> click event</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" >
+		
+	</script>
+
+	<style>
+		.main{
+			display: flex;
+		}
+		.red{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<div class="main">
+		<div class="red"></div>
+		<div class="red"></div>
+		<div class="red"></div>
+	</div>
+
+	<button id="btn_id"> Click </button>
+
+	<script>
+		$(document).ready(function(){
+			$('#btn_id').click(function(){
+			  $('.red').css('backgroundColor', 'red');
+			});
+		});
+	</script>
+	
+</body>
+</html>
